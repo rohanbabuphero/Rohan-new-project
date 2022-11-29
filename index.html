@@ -8,6 +8,26 @@
       
        </title>
        <style>
+        p::before{             /*pseudo code*/
+          content: " ROHAN ";
+          color: brown;
+           font-size: 20px;
+        }
+        .special-effect::after{
+            content: "rohan babu";
+            color: rgb(255, 136, 0);
+            font-size: 20px;
+        }
+       body{
+         counter-reset: section;
+       }
+       h6::before{
+        counter-increment:section;
+        content: " Darling❣️" counter(section)":";
+       }
+
+
+
         body{
             background-color: lightblue;
         }
@@ -44,13 +64,19 @@
        </style>
     
 </head>
-<body> 
-     <p>lal pori nil jin</p>
+<body>
+    <h6>sokina</h6> 
+    <h6>korima</h6>
+    <h6>rohima</h6>
+    <h6>jorina</h6>
+    <h6>dhorina</h6>
+    <h6>porina</h6>
+     <p> lal pori nil jin</p>
     <p> The 32 countries qualified for the 2022 FIFA World Cup are Argentina, Brazil, England, France, Spain, Belgium, Portugal, Germany, The Netherlands, Uruguay, Croatia, Denmark, Mexico, the United States, Senegal, Wales, Poland, Australia, Japan, Morocco, Switzerland, Ghana, Korea Republic, Cameroon, Serbia, Canada, Costa .</p>
 
     <h2>rohan is a rohan boy</h2>
      <h3>this is rohan and is the problem are very problem</h3>
-    <h2>I AM LEARNING WEVELOPMENT </h2>
+    <h2 class ="special-effect">I AM LEARNING WEVELOPMENT </h2>
     <h1> Narrated Abu Musa:
 
         Some people asked Allah's Messenger (ﷺ), "Whose Islam is the best? i.e. (Who is a very good Muslim)?" He replied, "One who avoids harming the Muslims with his tongue and hands."
